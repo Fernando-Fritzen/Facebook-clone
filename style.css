@@ -133,7 +133,9 @@ section#menu-esquerdo{
 
 main{
     width: 46%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*estilo dos stories*/
@@ -211,6 +213,70 @@ main div#container-stories .story .img-name .img-pessoa img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+main div#new-post{
+    width: 85%;
+    height: 140px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+main div#new-post div#new-text{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid black;
+}
+
+.img-profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img-profile img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+main div#new-post div#new-text input{
+    width: 400px;
+    height: 40px;
+    margin-left: 15px;
+    border-radius: 15px;
+    border: none;
+    background: var(--color-comment);
+    padding: 15px;
+    font-size: 12pt;
+}
+
+main div#new-post div#new-multimedia{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+main div#new-post div#new-multimedia .box-multimedia{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    color: rgba(0,0,0,.7);
+}
+
+main div#new-post div#new-multimedia .box-multimedia img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
 }
 
 section#menu-direito{
