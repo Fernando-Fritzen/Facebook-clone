@@ -61,9 +61,24 @@ header div#menu{
 
 div#menu ul{
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     list-style: none;
+    padding: 2px 0px;
+}
+
+div#menu ul li{
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#menu ul li:hover{
+    background: var(--fds-divider-on-white);
 }
 
 ul li img{
@@ -78,17 +93,26 @@ header div#more{
     padding: 0 10px;
 }
 
-div#user{
+.user{
     display: flex;
     width: 45%;
     align-items: center;
 }
 
-div#user div#img{
+.user .img{
+    position: relative;
     width: 28px;
     height: 28px;
     border-radius: 14px;
     background-color: var(--color-comment);
+    margin-right: 5px;
+}
+
+.user .img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 div#more ul{
@@ -128,8 +152,37 @@ ul div.icon li img{
 
 section#menu-esquerdo{
     width: 27%;
-
+    padding: 20px 20px;
 }
+
+section#menu-esquerdo .user{
+    width: 80%;
+}
+
+section#menu-esquerdo ul{
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+
+section#menu-esquerdo ul li{
+    width: 80%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+section#menu-esquerdo ul li img{
+    margin-right: 10px;
+}
+
+section#menu-esquerdo ul li:hover{
+    background: var(--fds-disabled-icon);
+}
+
+
 
 main{
     width: 46%;
@@ -229,7 +282,7 @@ main div#new-post div#new-text{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .img-profile{
@@ -255,6 +308,7 @@ main div#new-post div#new-text input{
     background: var(--color-comment);
     padding: 15px;
     font-size: 12pt;
+    outline: none;
 }
 
 main div#new-post div#new-multimedia{
@@ -279,10 +333,91 @@ main div#new-post div#new-multimedia .box-multimedia img{
     margin-right: 5px;
 }
 
+.section-post{
+    width: 85%;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-post header{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.section-post header .header{
+    width: 100%;
+    height: 65px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    background: #fff;
+    align-items: center;
+}
+
+.section-post header .header .who{
+    height: 100%;
+    display: flex;
+    background: #fff;
+    align-items: center;
+    padding: 15px;
+}
+
+.section-post header .header .who .name-hour{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.section-post header .header .who .name-hour span{
+    margin-bottom: 5px;
+}
+
+.section-post header .header .who .name-hour span:last-child{
+    font-size: 10pt;
+    color: rgba(0,0,0,.6);
+}
+
+.section-post header .header .options{
+    height: 100%;
+    margin-left: 40%;
+    font-size: 20pt;
+    transform: translateX(-100%);
+}
+
+.section-post header .header .options span{
+    margin: auto 0;
+}
+
+.section-post header .subtitle{
+    padding: 10px 15px;
+    background: #fff;
+    height: 55px;
+    position: relative;
+}
+
+.section-post .post{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.section-post .post img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 section#menu-direito{
     width: 27%;
 
 }
+
 
 
 
